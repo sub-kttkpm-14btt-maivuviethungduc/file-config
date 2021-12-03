@@ -3,6 +3,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: https://euroku-cus-order.herokuapp.com//eureka/
     instance:
-      hostname: localhost
+      hostname: euroku-cus-order.herokuapp.com
