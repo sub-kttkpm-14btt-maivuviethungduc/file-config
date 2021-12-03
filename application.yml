@@ -1,8 +1,9 @@
 eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: https://euroku-cus-order.herokuapp.com//eureka/
-    instance:
-      hostname: euroku-cus-order.herokuapp.com
+  instance:
+    hostname: euroku-cus-order.herokuapp.com
+    homePageUrl: https://${eureka.instance.hostName}/
+    home-page-url-path: https://${eureka.instance.hostName}
+    non-secure-port-enabled: true
+    non-secure-port: 80
+    secure-port: 443
+    secure-port-enabled: false
